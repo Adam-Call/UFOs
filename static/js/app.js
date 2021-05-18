@@ -24,6 +24,24 @@ function buildTable(data) {
 }
 
 
+function handleClick() {
+    //Grab the datetime value from the filter
+    let date = d3.select('#datetime').property('value');
+    let filteredData = tableData;
 
+    //Check to see if date was entered and filter the data
+    if (date) {
+        //Apply 'filter' to table data to only keep  rows that match 
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
 
+    //Rebuild the table using filteredData, if no date enetered then 
+    //filteredData will be original table.
+    buildTable(filteredData);
+};
 
+//Attach an event to listen for the form button
+d3.selectAll('#filter-btn').on('Click', handleClick);
+
+//Build the table when page loads
+buildTable(tableData);
