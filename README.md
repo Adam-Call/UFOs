@@ -4,6 +4,9 @@ The purpose of this page is to filter the UFO sighting data. We have a dataset o
 
 ## Results
 The filtering inputs are set up to activate the filter function whenever inputs are entered. By establishing an event listener that looks for changes made in the input boxes. This will happen instantaneously no need to click a search button. 
+![search](https://user-images.githubusercontent.com/80363261/120113560-a1b51900-c140-11eb-9e22-41e881693920.png)
+![search2](https://user-images.githubusercontent.com/80363261/120113563-a4b00980-c140-11eb-8931-c08afd2fc0b0.png)
+![console](https://user-images.githubusercontent.com/80363261/120113566-a7126380-c140-11eb-8c69-335bdcb76d9b.png)
 
 ## Summary
 A drawback of the current form of this page is that it populates the table with the entire dataset. While with the data we have of just over one hundred entries is not that taxing, if we were able to expand the data we have it would make the page unwieldy. 
